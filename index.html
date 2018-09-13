@@ -135,6 +135,8 @@
 
 
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -305,9 +307,26 @@
         
           
             
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Unrecognized tag argument(2): autoplay=true");
-			</script>
+        <div id="aplayer-AqtSDFzg" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-AqtSDFzg"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "说散就散",
+              author: "袁娅维",
+              url: "http://m10.music.126.net/20180913223429/59bf43f79faca25726ddff0a50e4b09f/ymusic/f92c/217d/0b04/dcd03bbe6fa0d90d9c6558b16a95f234.mp3",
+              pic: "http://p1.music.126.net/Yj2g6u9X6UCZPaRLCoJ5mQ==/109951163169027515.jpg?param=130y130",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
           
         
       
